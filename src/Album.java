@@ -87,7 +87,7 @@ public class Album {
             for(Song song : songs){
                 if(song.getTitle().equals(title)){
                     playList.add(song);
-                    System.out.println("song has been added to playlist");
+                    System.out.println(song + " : song has been added to playlist");
                     break;
                 }
             }
@@ -101,7 +101,7 @@ public class Album {
         int index = trackNo-1;
         if(index>=0 && index<songs.size()){
             playList.add(songs.get(index));
-            System.out.println("song has been added to playlist");
+            System.out.println(songs.get(index) + " : song has been added to playlist");
         }
         else{
             System.out.println("Invalid track no");
